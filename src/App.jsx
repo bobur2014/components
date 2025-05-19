@@ -4,97 +4,103 @@ const App = () => {
   return (
     <div className="font-sans text-gray-800">
 
-   
-      <nav className="flex justify-between items-center px-6 py-4">
-        <h1 className="text-2xl font-bold text-orange-500">Bella Onojie</h1>
-        <ul className="flex gap-6 font-medium">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Faq</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      {/* Navbar */}
+      <header className="flex justify-between items-center px-8 py-6 bg-white shadow">
+        <div className="text-2xl font-bold text-blue-600">EduSite</div>
+        <nav className="space-x-6">
+          <a href="#" className="hover:text-blue-600">Home</a>
+          <a href="#" className="hover:text-blue-600">About</a>
+          <a href="#" className="hover:text-blue-600">Courses</a>
+          <a href="#" className="hover:text-blue-600">Blog</a>
+          <a href="#" className="hover:text-blue-600">Contact</a>
+        </nav>
+        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Sign Up
+        </button>
+      </header>
 
-
-      <section className="relative text-center bg-cover bg-center h-[550px]" style={{ backgroundImage: '' }}>
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4">
-          <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
-            Why stay hungry when you can order from Bella Onojie
-          </h2>
-          <p className="text-white mb-6">Download the bella onoje’s food app now on</p>
-          <div className="flex gap-4">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-full">Playstore</button>
-            <button className="bg-transparent border border-white text-white px-6 py-3 rounded-full">App store</button>
+      {/* Hero Section */}
+      <section className="flex flex-col-reverse lg:flex-row items-center px-8 py-16 bg-yellow-50">
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-4xl font-bold mb-4">Studying Online is now much easier</h1>
+          <p className="mb-6 text-gray-600">
+            SkillUp helps students achieve their goals with flexible and affordable courses.
+          </p>
+          <div className="space-x-4">
+            <button className="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600">
+              Join for Free
+            </button>
+            <button className="text-orange-500 font-semibold underline">
+              Learn More
+            </button>
           </div>
+        </div>
+        <div className="lg:w-1/2 mb-8 lg:mb-0">
+          <img src="./src/assets/pi.png" alt="Hero" className="w-full max-w-md mx-auto" />
         </div>
       </section>
 
-
-      <div className="flex justify-center my-12">
-        <img src="/phones.png" alt="App Phones" className="max-w-xs md:max-w-md" />
-      </div>
-
-
-
-      <section className="text-center py-12 px-4">
-        <h3 className="text-2xl font-bold mb-12">How the app works</h3>
-
-        <div className="flex flex-col gap-20 max-w-4xl mx-auto">
-
-          {/* Step 1 */}
-          <div className="flex flex-col md:flex-row items-center gap-10">
-            <img src="/step1.png" alt="Create Account" className="max-w-xs" />
-            <div className="text-left">
-              <h4 className="text-orange-500 font-bold mb-2">Create an account</h4>
-              <h5 className="text-xl font-semibold mb-2">Create/login to an existing account to get started</h5>
-              <p>Explore all features and store your preferences easily.</p>
-            </div>
-          </div>
-
-        
-          <div className="flex flex-col md:flex-row-reverse items-center gap-10">
-            <img src="/step2.png" alt="Explore Menu" className="max-w-xs" />
-            <div className="text-left">
-              <h4 className="text-orange-500 font-bold mb-2">Explore varieties</h4>
-              <h5 className="text-xl font-semibold mb-2">Shop for your favorite meals as e dey hot.</h5>
-              <p>Browse the app to find your desired meals and add to cart.</p>
-            </div>
-          </div>
-
- 
-          <div className="flex flex-col md:flex-row items-center gap-10">
-            <img src="/step3.png" alt="Checkout" className="max-w-xs" />
-            <div className="text-left">
-              <h4 className="text-orange-500 font-bold mb-2">Checkout</h4>
-              <h5 className="text-xl font-semibold mb-2">When you're done, check out and get it delivered.</h5>
-              <p>Quick and seamless checkout, then sit back and relax.</p>
-            </div>
-          </div>
-
+      {/* Trusted By Section */}
+      <section className="text-center py-10">
+        <p className="uppercase text-gray-500 text-sm mb-4">Trusted by over 100+ companies</p>
+        <div className="flex justify-center space-x-6 opacity-70">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" className="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" className="h-6" />
         </div>
       </section>
 
-      
-      <section className="relative bg-cover bg-center h-[300px]" style={{ backgroundImage: 'url("/download-bg.jpg")' }}>
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white px-4">
-          <h3 className="text-2xl font-bold mb-4">Download the app now</h3>
-          <p className="mb-6">Available on your favorite store. Start your premium experience now</p>
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-full">Playstore</button>
+      {/* Video Section */}
+      <section className="bg-white py-12 px-6 text-center">
+        <h2 className="text-2xl font-bold mb-4">Watch the Introduction</h2>
+        <p className="mb-6 text-gray-600">Learn how our platform works in just a few minutes.</p>
+        <div className="max-w-3xl mx-auto">
+          <img src="./src/assets/pt.png" alt="Video Placeholder" className="rounded-xl w-full" />
         </div>
       </section>
 
-    
-      <footer className="text-center py-6 bg-gray-100">
-        <h4 className="text-orange-500 font-bold text-xl">Bella Onojie</h4>
-        <div className="flex justify-center gap-4 mt-4">
-          <a href="#"><img src="/facebook.svg" alt="Facebook" className="w-5" /></a>
-          <a href="#"><img src="/twitter.svg" alt="Twitter" className="w-5" /></a>
-          <a href="#"><img src="/instagram.svg" alt="Instagram" className="w-5" /></a>
+      {/* Features Section */}
+      <section className="py-16 px-6 bg-gray-50">
+        <h2 className="text-center text-3xl font-bold mb-10">Our Features</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <FeatureCard
+            title="Expert Tutors"
+            text="Learn from the best professionals in the industry."
+            image="https://i.ibb.co/N6qChLF/feature1.png"
+          />
+          <FeatureCard
+            title="Assessments"
+            text="Test your knowledge with regular quizzes."
+            image="https://i.ibb.co/58R0ZDd/feature2.png"
+          />
+          <FeatureCard
+            title="Live Classes"
+            text="Join interactive live sessions with mentors."
+            image="https://i.ibb.co/nCfZTL5/feature3.png"
+          />
         </div>
-        <p className="mt-4 text-sm text-gray-500">Copywright 2023 Bella Onojie.com</p>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-10 px-6 text-center">
+        <p>&copy; 2025 EduSite. All rights reserved.</p>
+        <div className="mt-4 space-x-4">
+          <a href="#" className="hover:underline">Privacy</a>
+          <a href="#" className="hover:underline">Terms</a>
+          <a href="#" className="hover:underline">Support</a>
+        </div>
       </footer>
     </div>
   );
 };
+
+// Reusable FeatureCard Component
+const FeatureCard = ({ title, text, image }) => (
+  <div className="bg-white shadow-md p-6 rounded-xl text-center">
+    <img src={image} alt={title} className="mx-auto mb-4 h-32 object-contain" />
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="text-gray-600">{text}</p>
+  </div>
+);
 
 export default App;
