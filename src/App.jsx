@@ -50,36 +50,112 @@ const App = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="bg-white py-12 px-6 text-center">
-        <h2 className="text-2xl font-bold mb-4">Watch the Introduction</h2>
-        <p className="mb-6 text-gray-600">Learn how our platform works in just a few minutes.</p>
-        <div className="max-w-3xl mx-auto">
-          <img src="./src/assets/pt.png" alt="Video Placeholder" className="rounded-xl w-full" />
-        </div>
-      </section>
+   {/* About Skilline Section */}
+<section className="py-16 px-6 bg-white text-center lg:text-left">
+  <h2 className="text-2xl font-bold text-center mb-4">
+    What is <span className="text-orange-500">Skilline</span>?
+  </h2>
+  <p className="max-w-3xl mx-auto text-gray-600 mb-10">
+    Skilline is a platform that allows educators to create online classes whereby they can
+    store the course materials online, manage assignments, quizzes and exams, monitor
+    due dates, grade results and provide students with feedback all in one place.
+  </p>
 
-      {/* Features Section */}
-      <section className="py-16 px-6 bg-gray-50">
-        <h2 className="text-center text-3xl font-bold mb-10">Our Features</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <FeatureCard
-            title="Expert Tutors"
-            text="Learn from the best professionals in the industry."
-            image="https://i.ibb.co/N6qChLF/feature1.png"
-          />
-          <FeatureCard
-            title="Assessments"
-            text="Test your knowledge with regular quizzes."
-            image="https://i.ibb.co/58R0ZDd/feature2.png"
-          />
-          <FeatureCard
-            title="Live Classes"
-            text="Join interactive live sessions with mentors."
-            image="https://i.ibb.co/nCfZTL5/feature3.png"
-          />
-        </div>
-      </section>
+  <div className="grid md:grid-cols-2 gap-6 mb-16">
+    <div className="bg-gray-100 p-6 rounded-xl flex flex-col items-center">
+      <img src="./src/assets/pu.png" alt="Instructor" className="rounded-md mb-4 h-40 object-cover" />
+      <h3 className="text-lg font-semibold mb-2">FOR INSTRUCTORS</h3>
+      <button className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900">
+        Start a class today
+      </button>
+    </div>
+    <div className="bg-gray-100 p-6 rounded-xl flex flex-col items-center">
+      <img src="./src/assets/pt.png" alt="Student" className="rounded-md mb-4 h-40 object-cover" />
+      <h3 className="text-lg font-semibold mb-2">FOR STUDENTS</h3>
+      <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Enter access code
+      </button>
+    </div>
+  </div>
+
+  <div className="flex flex-col lg:flex-row items-center gap-10">
+    <div className="lg:w-1/2">
+      <h3 className="text-xl font-semibold mb-4 text-left">
+        <span className="text-orange-500">Everything you can do in a physical classroom</span>, you can do with Skilline
+      </h3>
+      <p className="text-gray-600 mb-4 text-left">
+        Skilline’s school management software helps traditional and online schools manage
+        scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
+      </p>
+      <a href="#" className="text-blue-600 font-semibold hover:underline text-left block">
+        Learn more
+      </a>
+    </div>
+    <div className="lg:w-1/2">
+      <img src="./src/assets/oy.png" alt="Classroom Preview" className="rounded-xl shadow-md" />
+    </div>
+  </div>
+
+  <div className="mt-16 text-center">
+    <h3 className="text-xl font-bold text-blue-700 mb-2">Our Features</h3>
+    <p className="text-gray-600 max-w-xl mx-auto">
+      This very extraordinary feature, can make learning activities more efficient
+    </p>
+  </div>
+
+  <div className="mt-10 grid md:grid-cols-2 items-center gap-10">
+    <div>
+      <img src="./src/assets/girl.png" alt="Teacher" className="rounded-xl shadow" />
+    </div>
+    <div className="text-left">
+      <h4 className="text-lg font-bold text-orange-500 mb-2">Tools For Teachers And Learners</h4>
+      <p className="text-gray-600">
+        Class has a dynamic set of teaching tools built to be deployed and used during class.
+        Teachers can handout assignments in real-time for students to complete and submit.
+      </p>
+    </div>
+  </div>
+</section>
+{/* New Features Section */}
+<section className="bg-white py-16 px-6">
+  <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+    <div>
+      <h3 className="text-2xl font-bold mb-2">
+        <span className="text-blue-800">Assessments,</span>{" "}
+        <span className="text-orange-500">Quizzes,</span> Tests
+      </h3>
+      <p className="text-gray-600">
+        Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.
+      </p>
+    </div>
+    <img src="./src/assets/ou.png" alt="Quiz" className="rounded-lg shadow-md" />
+  </div>
+
+  <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+    <img src="./src/assets/ry.png" alt="Gradebook" className="rounded-lg shadow-md" />
+    <div>
+      <h3 className="text-2xl font-bold mb-2">
+        <span className="text-orange-500">Class Management</span>{" "}
+        <span className="text-blue-800">Tools for Educators</span>
+      </h3>
+      <p className="text-gray-600">
+        Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. Teachers can review and grade tests and quizzes in real-time.
+      </p>
+    </div>
+  </div>
+
+  <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 className="text-2xl font-bold mb-2 text-blue-800">One-on-One Discussions</h3>
+      <p className="text-gray-600">
+        Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.
+      </p>
+    </div>
+    <img src="./src/assets/34.png" alt="One-on-One Discussion" className="rounded-lg shadow-md" />
+  </div>
+</section>
+
+
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-10 px-6 text-center">
